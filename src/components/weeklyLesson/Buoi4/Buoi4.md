@@ -41,3 +41,4 @@ cha như props
 // props và state là 2 thành phần cơ bản nhất của react ( cần về nhà tìm hiểu thật kĩ để ngấm được khái niệm và cách dùng)
 
 
+include('string')

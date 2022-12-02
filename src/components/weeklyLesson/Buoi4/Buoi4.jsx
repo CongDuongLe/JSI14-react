@@ -28,6 +28,22 @@ const JSI14Mems = [
     avatarUrl:
       'https://i.pinimg.com/564x/70/4c/68/704c68794c4f0767e42892ec208cad35.jpg',
   },
+  {
+    name: 'Hoàng Kỳ Anh 1',
+    age: 15,
+    isMale: true,
+    classMindX: 'JSI-14',
+    avatarUrl:
+      'https://i.pinimg.com/564x/70/4c/68/704c68794c4f0767e42892ec208cad35.jpg',
+  },
+  {
+    name: 'Hoàng Kỳ Anh 2',
+    age: 15,
+    isMale: true,
+    classMindX: 'JSI-14',
+    avatarUrl:
+      'https://i.pinimg.com/564x/70/4c/68/704c68794c4f0767e42892ec208cad35.jpg',
+  },
 ]
 
 const Buoi4 = () => {
