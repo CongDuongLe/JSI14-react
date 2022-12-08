@@ -2,6 +2,7 @@ import { useState } from 'react'
 import HelloWorldComponent from './components/pages/HelloWorldComponent'
 import Vidu2 from './components/pages/Vidu2'
 import ViduVeComponent from './components/pages/ViduVeComponent'
+import Rewind from './components/rewindStateProps/Rewind'
 import Buoi4 from './components/weeklyLesson/Buoi4/Buoi4'
 import Buoi5 from './components/weeklyLesson/Buoi5/Buoi5'
 import Buoi5_2 from './components/weeklyLesson/Buoi5/Buoi5_2'
@@ -16,7 +17,9 @@ function App() {
       <Vidu2 /> */}
       {/* <Buoi4/> */}
       {/* <Buoi5/> */}
-      <Buoi5_2/>
+      {/* <Buoi5_2/> */}
+      <Rewind/>  
+      {/* rewind đang là children của App.jsx */}
     </div>
   )
 }
