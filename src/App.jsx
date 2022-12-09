@@ -6,6 +6,7 @@ import Rewind from './components/rewindStateProps/Rewind'
 import Buoi4 from './components/weeklyLesson/Buoi4/Buoi4'
 import Buoi5 from './components/weeklyLesson/Buoi5/Buoi5'
 import Buoi5_2 from './components/weeklyLesson/Buoi5/Buoi5_2'
+import Buoi7 from './components/weeklyLesson/Buoi7/Buoi7'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,8 +19,9 @@ function App() {
       {/* <Buoi4/> */}
       {/* <Buoi5/> */}
       {/* <Buoi5_2/> */}
-      <Rewind/>  
+      {/* <Rewind/>   */}
       {/* rewind đang là children của App.jsx */}
+      <Buoi7 />
     </div>
   )
 }
