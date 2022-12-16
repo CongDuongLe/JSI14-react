@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import FilmDetails from './children/FilmDetails'
 import { useNavigate } from 'react-router-dom'
+const GOOGLE_TOKEN = 'accessToken'
 
 const Buoi7 = () => {
   const navigate = useNavigate()
@@ -12,6 +13,7 @@ const Buoi7 = () => {
   // là 1 array rỗng
 
   const [filmDatas, setFilmDatas] = useState([])
+  const [displayEmail, setDisplayEmail] = useState('')
 
   // 2 , gọi API thì cần 1 hàm
 
@@ -39,12 +41,35 @@ const Buoi7 = () => {
 
     // console.log(filmDatas, 'filmDatas here')
 
+    useEffect(() => {
+      const userEmail = localStorage.getItem('email')
+      setDisplayEmail(userEmail)
+     } , [])
+
+
+    //  console.log(displayEmail, 'displayEmail here')
+
+
+
+    const handleLogout = () => { 
+      // let userInfo = {
+      //   email : '',
+      //   password : ''
+      // }
+      // localStorage.setItem('user', JSON.stringify(userInfo))
+      localStorage.removeItem(GOOGLE_TOKEN)
+      navigate('/signIn')
+    }
+
 
   return (
     <div className="h-full w-full bg-[#6D67E4] flex flex-1 justify-center items-center">
       <div>
+        <div className='absolute top-6 left-6'>
+          <h1 className="text-xl font-bold text-white">Welcome to {displayEmail}</h1>
+        </div>
         <button 
-          onClick={() => navigate('/signIn')}
+          onClick={handleLogout}
           className="rounded-lg font-medium bg-blue-100 text-blue-500 px-6 py-3 absolute top-4 right-4">
           Log out
         </button>

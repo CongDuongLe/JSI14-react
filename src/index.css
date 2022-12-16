@@ -47,7 +47,7 @@
     }
 
     .all-stars {
-        @apply animate-ping 
+        @apply animate-pulse
     }
   }
 
