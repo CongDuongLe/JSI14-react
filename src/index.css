@@ -18,11 +18,11 @@
         @apply font-light text-white border-b-[2px] border-solid border-white no-underline
      }
      input[type='text'] {
-        @apply text-white p-[5px] border-none font-[18px] bg-[#0a1821] outline-none border-b-[2px] border-solid border-white
+        @apply text-white p-[5px] border-none font-[18px] outline-none border-b-[2px] border-solid border-white text-zinc-800
      }
 
         input[type='text']:focus {
-            @apply text-white  border-none font-[18px] bg-[#fff] outline-none border-b-[2px] border-solid
+            @apply text-zinc-800  border-none font-[18px] bg-[#fff] outline-none border-b-[2px] border-solid
         }
 }
 

@@ -2,44 +2,31 @@ import React from 'react'
 
 const Vidu2 = () => {
   return (
-    <div className='pt-[100px]'>
-       <div
-         aria-label="featured-list"
-         className="flex items-start justify-between gap-x-5 max-w-[1000px]"
-       >
-         {Array(4)
-           .fill(0)
-           .map((item, index) => (
-             <div key={index} className="flex flex-col items-start">
-               <div className="flex items-center justify-center w-20 h-20 mb-5 text-green-500 rounded-full bg-green-50">
-                 <svg
-                   xmlns="http://www.w3.org/2000/svg"
-                   className="w-6 h-6"
-                   fill="none"
-                   viewBox="0 0 24 24"
-                   stroke="currentColor"
-                   strokeWidth={2}
-                 >
-                   <path
-                     strokeLinecap="round"
-                     strokeLinejoin="round"
-                     d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-                   />
-                   <path
-                     strokeLinecap="round"
-                     strokeLinejoin="round"
-                     d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                   />
-                 </svg>
-               </div>
-               <h3 className="mb-2 text-xl font-bold">Management</h3>
-               <p className="text-sm leading-loose">
-                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-               </p>
-             </div>
-           ))}
-       </div>
+    <>
+    <div className="flex items-center justify-center h-full">
+    <button className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700" onclick="toggleModal()">Show Modal</button>
+  </div>
+  <div className="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden" id="modal">
+    <div className="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+      <div className="fixed inset-0 transition-opacity">
+        <div className="absolute inset-0 bg-gray-900 opacity-75" />
+      </div>
+      <span className="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+      <div className="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full" role="dialog" aria-modal="true" aria-labelledby="modal-headline">
+        <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+          <label>Name</label>
+          <input type="text" className="w-full bg-gray-100 p-2 mt-2 mb-3" />
+          <label>Url</label>
+          <input type="text" className="w-full bg-gray-100 p-2 mt-2 mb-3" />
+        </div>
+        <div className="bg-gray-200 px-4 py-3 text-right">
+          <button type="button" className="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"><i className="fas fa-times"></i> Cancel</button>
+          <button type="button" className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"><i className="fas fa-plus"></i> Create</button>
+        </div>
+      </div>
     </div>
+  </div>
+  </>
   )
 }
 

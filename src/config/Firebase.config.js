@@ -25,3 +25,6 @@ export const actionCodeSettings = {
   url: 'http://127.0.0.1:5173/',
   handleCodeInApp: true,
 }
+
+
+// type =' module ' => import, export giữa các file js với nhau
