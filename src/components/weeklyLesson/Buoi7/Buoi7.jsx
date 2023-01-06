@@ -91,3 +91,19 @@ export default Buoi7
 // props : property của component , có dạng propsName = {value}
 // state : là trạng thái của ứng dụng, đc quản lí bằng hàm useState() được import từ react
 // effect : là quản lí những hàm nào sẽ chạy khi mở ửng dụng
+
+
+
+// Yêu cầu về nhà : làm lab trên classin + tìm hiểu cách đăng nhập với github, facebook ?
+
+
+// lab về nhà : đăng nhập ẩn danh ( đã chữa), đăng nhập được link gửi về email ( đã chữa)
+// => về nhà tìm hiểu + đọc lại code đã được hướng dẫn để có thể áp dụng vào các ứng dụng React khác
+
+
+// hướng giải quyết : 
+// + với đăng nhập bằng fb : 1 nút có content hd người dùng đăng nhập = facebook => tìm hiểu về cách
+// bật provider của fb login trên firebase => vào tài khoản fb đê liên kết giữa firebase + facebook 
+// => triển khai logic để user có thể đăng nhập vào firebase với tài khoản fb được liên kết
+
+// + đăng nhập bằng github : tương tự như đăng nhập bằng facebook

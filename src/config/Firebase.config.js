@@ -18,8 +18,11 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app)  // khai báo cho firebase biết mình sẽ dùng để firestore database với config là tài khoản của mình
+export const db = getFirestore(app)  // khai báo cho firebase biết mình sẽ dùng để firestore database với config là tài khoản của mình 
 export const auth = getAuth(app) // khai báo cho firebase biết mình sẽ dùng để auth với config là tài khoản của mình
+
+export const FIREBASE_COLLECTION = 'songs'
+
 
 export const actionCodeSettings = {
   url: 'http://127.0.0.1:5173/',
@@ -28,3 +31,6 @@ export const actionCodeSettings = {
 
 
 // type =' module ' => import, export giữa các file js với nhau
+
+// export các file, các biến, các function => nhằm nhiệm vụ giúp cho các file khác ở trong 1 ứng dụng React có thể tái sử dụng qua lại mà không 
+// cần viết mới

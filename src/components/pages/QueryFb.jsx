@@ -8,6 +8,7 @@ import {
   doc,
   deleteField,
   updateDoc,
+  onSnapshot
 } from 'firebase/firestore'
 
 const QUERY_KEY = 'songs'
